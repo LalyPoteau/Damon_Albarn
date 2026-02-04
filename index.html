@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Damon Albarn</title>
+    <link rel="icon" type="image/png" href="src/images/Logo.png" />
+    <link rel="stylesheet" href="src/style/style_laly.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <div>
+        <div id="intro"><p >Une photo de l’artiste accompagnée d’un texte de présentation rapide.
+Damon Albarn est un auteur compositeur Britannique. 
+
+Damon Albarn, passé de bébé testeurs à un des musicien britannique les plus connu du au nombreux groupe qu’il a fondé à travers le temps, notamment Blur, Gorillaz et  The good, the Bad and the Queen.
+</p>
+<div id="readMoreContainer"></div>
+</div>
+
+<button id="btn">Lire plus <i class='bx bx-right-arrow-alt'></i></button>
+<script>
+
     
+    let readmore = `
+Damon naît en 1968 dans une famille d'artistes avec une enfance remplie de détails cocasses comme le fait qu’il fut bébé testeur à l'âge de 6 mois pour les jouets fabriqués par la société de son père. Il rencontre Graham Coxon à l’école, le futur guitariste de Blur. Comme quoi les rencontres importantes se font tôt. Et son attrait vers les groupes également, rejoignant son premier groupe en 1988 même si c’était uniquement pour l’accès gratuit au bar.
+
+Damon malgré tout ses groupes ne tient pas en place et à plein d'autres projets. Il s’est installé à Mali pour créer le label Honest Jon’s (mettre lien s' ils ont un site) . Il a également créer un opéra chinois et une comédie musicale sur Alice au pays des merveilles
+`;
+let container = document.getElementById('readMoreContainer');
+    let btn = document.getElementById('btn');
+    btn.addEventListener('click', butn_action)
+
+
+
+    function butn_action(){
+    if(btn.innerHTML == 'Lire plus  <i class="bx bx-right-arrow-alt"></i>'){
+        btn.innerHTML = 'Lire moins  <i class="bx bx-right-arrow-alt"></i>';
+        console.log('on');
+        
+        container.append(readmore);
+    }
+    else {
+        btn.innerHTML = 'Lire plus  <i class="bx bx-right-arrow-alt"></i>';
+        console.log('off');
+        container.innerHTML = '';
+    }
+}
+
+
+</script>
+    <div><img src="src/images/Damon.png" alt="Photo Damon Albarn"></div>
+    </div>
 </body>
 </html>
