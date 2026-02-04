@@ -7,6 +7,18 @@ a {
     color : black;
 }
 
+#readMoreContainer {
+    display: grid; 
+    grid-template-rows: 0fr; 
+    min-height: 0;
+  transition: visibility 1s;
+  transition: grid-template-rows 1s;}
+
+#readMoreContainer .expanded{
+grid-template-rows: 1fr;
+visibility: visible;
+    }
+
 body{
     font-family:  "Poppins", sans-serif;
 }
@@ -66,10 +78,20 @@ color : white;
 box-shadow: 0px 0px 15px 10px #FF8300;
 }
 
+.hover.blur button {
+        background-color: #FF8300;
+        box-shadow: 0px 0px 15px 5px #F3AE40;
+}
+
 .hover.gorillaz{
 background: linear-gradient(90deg,rgba(0, 172, 217, 1) 0%, rgba(55, 60, 172, 1) 100%);
 color : white;
 box-shadow: 0px 0px 15px 10px #373CAC;
+}
+
+.hover.gorillaz button {
+        background-color: #00ACD9;
+        box-shadow: 0px 0px 15px 5px #373CAC;
 }
 
 .hover.thequeen{
@@ -78,14 +100,19 @@ color : white;
 box-shadow: 0px 0px 15px 10px #03954C;
 }
 
+.hover.thequeen button{
+        background-color: #3DE08E;
+        box-shadow: 0px 0px 15px 5px #03954C;
+}
+
 
 .hover button{
     color : white;
     border-radius: 5rem;
     border : none; 
     font-size: 1.5rem;
-    background-color: #3DE08E;
-    padding: 15px 20px 15px 20px;
+
+    padding: 10px 20px 10px 20px;
 }
 
 a:hover .hover, a:hover img{
@@ -93,13 +120,10 @@ a:hover .hover, a:hover img{
     transform: scaleY(1.1);
     object-fit: cover;
     z-index: 100;
-    opacity: 0.7;
+    opacity: 0.8;
     
 }
 
-a:hover .hover button{
-    opacity : 1;
-}
 
  a:hover img{
 filter: blur(3px);
