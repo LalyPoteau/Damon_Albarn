@@ -10,24 +10,59 @@
     <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style/style_laure.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="container">
+        <div>
         <h1 > Damon Albarn</h1>
-        <img src="src/images/Logo_damon_albarn-removebg-preview.png">
+        <h3>Blur</h3>
+        </div>
+        <img src="src/images/Logo.png">
     </header>
     <div class="border"></div>
 
     <section class="presentation container">
         <div class="text-groupe">
             <p> C’est le premier groupe fondé par Damon Albarn. Initialement nommé Seymour, lorsque le groupe arriva dans le label FoodRecords en mars 1990 ils ont dû changer le nom pour quelque chose de plus court, c’est ainsi qu’ils choisirent le nom Blur “flou” en anglais. </p>
+            <div id="readMoreContainer"></div>
             <button id="btn">Lire plus <i class='bx bx-right-arrow-alt'></i></button>
         </div>
-        <div class="img-groupe">
+
             <img src="src/images/blur.jpg">
-        </div>
+        
 
     </section>
+
+
+    <script>
+
+    
+    let readmore = `Le premier gros succès du groupe fut Parklife en 1994, pour lequel ils ont gagné le British album of the year et ils ont ensuite enchaîné les succès tels que Girls and Boys, Beetlebum et bien évidemment Song 2, nominé dans la catégorie British single of the year qui est aujourd’hui la musique la plus écouté du groupe avec 1 milliard d’écoutes sur spotify.`;
+let container = document.getElementById('readMoreContainer');
+    let btn = document.getElementById('btn');
+    btn.addEventListener('click', butn_action)
+
+
+
+    function butn_action(){
+    if(btn.innerHTML == 'Lire plus  <i class="bx bx-right-arrow-alt"></i>'){
+        btn.innerHTML = 'Lire moins  <i class="bx bx-right-arrow-alt"></i>';
+        console.log('on');
+        
+        container.append(readmore);
+    }
+    else {
+        btn.innerHTML = 'Lire plus  <i class="bx bx-right-arrow-alt"></i>';
+        console.log('off');
+        container.innerHTML = '';
+    }
+}
+
+
+</script>
 
 </body>
 </html>
