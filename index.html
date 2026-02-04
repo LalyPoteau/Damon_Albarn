@@ -18,7 +18,7 @@ Damon Albarn, passé de bébé testeurs à un des musicien britannique les plus 
 <div id="readMoreContainer"></div>
 </div>
 
-<button id="btn">Lire plus <i class='bx bx-right-arrow-alt'></i></button>
+<button id="btn">Lire plus <i class="bx bx-right-arrow-alt"></i></button>
 <script>
 
     
@@ -30,20 +30,20 @@ Damon malgré tout ses groupes ne tient pas en place et à plein d'autres projet
 let container = document.getElementById('readMoreContainer');
     let btn = document.getElementById('btn');
     btn.addEventListener('click', butn_action)
+    let isOpen = false;
 
-
-
+    //vérifie si on a ouvert le read more & soit rajoute ou retire le texte en mettant à jour celui du bouton
     function butn_action(){
-    if(btn.innerHTML == 'Lire plus  <i class="bx bx-right-arrow-alt"></i>'){
+    if(!isOpen){
         btn.innerHTML = 'Lire moins  <i class="bx bx-right-arrow-alt"></i>';
         console.log('on');
-        
+        isOpen = true;
         container.append(readmore);
     }
     else {
+        isOpen = false;
         btn.innerHTML = 'Lire plus  <i class="bx bx-right-arrow-alt"></i>';
-        console.log('off');
-        container.innerHTML = '';
+        container.innerHTML = ''; 
     }
 }
 
