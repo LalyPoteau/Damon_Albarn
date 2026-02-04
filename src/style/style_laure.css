@@ -34,7 +34,7 @@ header img{
 
 /*presentation*/
 
-.presentation{
+.presentation {
     display: flex;
     margin-top: 150px;
     align-items: center;
@@ -48,12 +48,11 @@ header img{
     padding: 15px;
 }
 
-.img-groupe img{
-    width: 50%;
+.presentation img {
+    width: 40%;
 }
 
 #btn{
-    align-items: center;
     text-decoration: none;
     color: black;
     background-color: #F8F2E8;
