@@ -25,6 +25,7 @@ footer nav{
 
 footer a {
     position : relative;
+    
 }
 
 footer .hover{
@@ -32,10 +33,17 @@ footer .hover{
     top : 0;
     left : 0;
     transition: 0.2s;
+    text-align: center;
     width: 100%;
     opacity: 0;
     height: 100%;
     transform-origin: bottom ;
+}
+
+footer .hover h3{
+     font-family: "Ultra", serif;
+     font-size: 2rem;
+     letter-spacing: 10px;
 }
 footer img{
     width : 100%;
@@ -48,9 +56,13 @@ footer img{
 
 }
 
+.hover p{
+    margin: 15%;
+}
+
 .hover.blur{
     background: linear-gradient(90deg,#FF8300 0%, #F3AE40 100%);
-
+color : white;
 box-shadow: 0px 0px 15px 10px #FF8300;
 }
 
@@ -65,6 +77,17 @@ background: linear-gradient(90deg,#03954C 0%, #3DE08E 100%);
 color : white;
 box-shadow: 0px 0px 15px 10px #03954C;
 }
+
+
+.hover button{
+    color : white;
+    border-radius: 5rem;
+    border : none; 
+    font-size: 1.5rem;
+    background-color: #3DE08E;
+    padding: 15px 20px 15px 20px;
+}
+
 a:hover .hover, a:hover img{
     display: block;
     transform: scaleY(1.1);
@@ -72,6 +95,10 @@ a:hover .hover, a:hover img{
     z-index: 100;
     opacity: 0.7;
     
+}
+
+a:hover .hover button{
+    opacity : 1;
 }
 
  a:hover img{
