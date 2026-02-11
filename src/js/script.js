@@ -1,7 +1,7 @@
 let box = document.getElementById('Funfacts');
 let funfacts = [`En 2016 il a reçu l’OBE (Officer of the Order of the British Empire), en honneur de ses services dans la musique. `,
     `Avant de démarrer Blur, Damon Albarn voulait faire une carrière de mime`,
-    `Il a rencontrait Graham Coxon (autre membre du groupe dans les toilettes de son école 
+    `Il a rencontrait Graham Coxon (autre membre du groupe Blur) dans les toilettes de son école 
 `, `Il est ami avec Banksy, et ça serait grâce à lui que Damon et Jamie Hewlett auraient commencé une colocation.
 `,
 `D’après une récente rumeur, l’un des membres de Blur serait Banksy.
@@ -26,7 +26,7 @@ function anecdote(){
 function anecdote_tournate(){
     anecdote();
     
-    setInterval(anecdote,15000);
+    setInterval(anecdote,10000);
     
 }
 
