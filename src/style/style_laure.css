@@ -105,6 +105,6 @@ header img{
 }
 .rotating {
     animation: rotating 2s linear infinite;
-    width: 30%;
-    margin-top : 70px
+    width: 45%;
+    
 }
