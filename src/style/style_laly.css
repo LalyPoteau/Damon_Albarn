@@ -21,6 +21,21 @@ grid-template-rows: 1fr;
 visibility: visible;
     }
 
+#Gorillaz h3{
+    color: #8b3537;
+    
+}
+
+#Gorillaz img{
+        border: solid 4px #751f25;
+        border-image: linear-gradient(#8b3537, #751f25) 1;
+
+}
+
+header{
+    border : none;
+}
+
 body{
     font-family:  "Poppins", sans-serif;
 }
@@ -86,14 +101,14 @@ box-shadow: 0px 0px 15px 10px #FF8300;
 }
 
 .hover.gorillaz{
-background: linear-gradient(90deg,rgba(0, 172, 217, 1) 0%, rgba(55, 60, 172, 1) 100%);
+background: linear-gradient(90deg,#8b3537 0%, #751f25 100%);
 color : white;
-box-shadow: 0px 0px 15px 10px #373CAC;
+box-shadow: 0px 0px 15px 10px #751f25;
 }
 
 .hover.gorillaz button {
-        background-color: #00ACD9;
-        box-shadow: 0px 0px 15px 5px #373CAC;
+        background-color: #8b3537;
+        box-shadow: 0px 0px 15px 5px #751f25;
 }
 
 .hover.thequeen{
