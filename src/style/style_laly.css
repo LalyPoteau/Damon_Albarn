@@ -32,6 +32,12 @@ visibility: visible;
 
 }
 
+#Blur{
+    border: solid 4px #FF8300;
+        border-image: linear-gradient(#FF8300 0%, #F3AE40) 1;
+
+}
+
 header{
     border : none;
 }
