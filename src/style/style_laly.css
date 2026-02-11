@@ -32,10 +32,14 @@ visibility: visible;
 
 }
 
-#Blur{
+#Blur img{
     border: solid 4px #FF8300;
         border-image: linear-gradient(#FF8300 0%, #F3AE40) 1;
 
+}
+
+#Blur h3{
+    color : #FF8300;
 }
 
 header{
