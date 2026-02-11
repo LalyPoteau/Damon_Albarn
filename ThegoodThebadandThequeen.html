@@ -4,8 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style/style_laure.css">
+    <link rel="stylesheet" href="src/style/style_laly.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="container">
+        <div>
+        <a href="index.html"><h1 > Damon Albarn</h1></a>
+        <h3>Blur</h3>
+        </div>
+        <img src="src/images/Logo.png">
+    </header>
+    <div class="border"></div>
+
+    <section class="presentation container">
+        <div class="text-groupe">
+            <p> Le groupe était de base un des nombreux projets solo de Damon Albarn, avec la production de Danger Mouse. Mais en juillet 2006 le projet solo devient un groupe avec le bassiste Paul Simono de The Clash, en guitariste Simon Tong de The Verve et finalement à la batterie Tony Allen de Fela Kuti.</p>
+            <div id="readMoreContainer"></div>
+            <button id="btn">Lire plus <i class='bx bx-right-arrow-alt'></i></button>
+        </div>
+
+            <img src="src/images/merrie land.jpg">
+        
+
+    </section>
+
     
+
+    <div class="albums">
+        <img class="rotating" src="src/images/vinyl.png">
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/3OCV0CcPqayHyPUqtjWcOT?utm_source=generator" width="548px" height="550px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+
+    <footer>
+    <nav>
+        <a href="Blur.html">
+        <div class="main">
+            <img src="src/images/blur.jpg" alt="Blur">
+            <div class="hover blur">
+                <h3>Blur</h3>
+                <p>C’est le premier groupe fondé par Damon Albarn. Initialement nommé Seymour, lorsque le groupe arriva dans le label FoodRecords en mars 1990 ils ont dû changer le nom pour quelque chose de plus court, c’est ainsi qu’ils choisirent le nom Blur “flou” en anglais. </p>
+                <button>Lire plus <i class="bx bx-right-arrow-alt"></i></button>    
+            </div>
+        </div>
+    
+        </a>
+        <a href="Gorillaz.html">
+            <div class="main">
+                <img src="src/images/gorillaz.png" alt="Gorillaz">
+                <div class="hover gorillaz">
+                    <h3>Gorillaz</h3>
+                    <p>Gorillaz découle de l’idée de critiquer l’industrie à l’aide d’un groupe virtuel tous les membres du groupe sont des personnages fictifs avec de vrais musiciens derrière. Le groupe obtient un succès planétaire.</p>
+                    <button>Lire plus <i class="bx bx-right-arrow-alt"></i></button>
+                </div>
+            </div>
+        </a>
+
+        <a href="ThegoodThebadandThequeen.html">
+        <div class="main">
+            <img src="src/images/merrie land.jpg" alt="The Good the bad and the queen">
+            <div class="hover thequeen">
+                <h3>The Good the bad and the queen</h3>
+                <p>Le groupe était de base un des nombreux projets solo de Damon Albarn, avec la production de Danger Mouse.</p>
+                <button>Lire plus <i class="bx bx-right-arrow-alt"></i></button>
+            </div>
+        </div>
+        </a>
+    
+    </nav>
+    </footer>
+
+    <script>
+        let readmore = `En 2007 ils ont sorti leur premier album qui fut voté par Observer Music Magazine le meilleur album de 2007. A la base le groupe avait mis fin à leurs activités de façon permanente cette année là, mais ils se sont réunis plusieurs fois pour faire des concerts au cours des années qui ont suivi. En 2018 le groupe produira un nouvel album dans un label fondé par Damon, et cet album aura le droit à une tournée en 2019. Le groupe ne performa plus après la fin de la tournée et ils cessèrent leurs activités depuis le décès de Allen en 2020.`;
+        let container = document.getElementById('readMoreContainer');
+        let btn = document.getElementById('btn');
+        btn.addEventListener('click', butn_action)
+
+
+
+    function butn_action(){
+    if(btn.innerHTML == 'Lire plus  <i class="bx bx-right-arrow-alt"></i>'){
+        btn.innerHTML = 'Lire moins  <i class="bx bx-right-arrow-alt"></i>';
+        console.log('on');
+        
+        container.append(readmore);
+    }
+    else {
+        btn.innerHTML = 'Lire plus  <i class="bx bx-right-arrow-alt"></i>';
+        console.log('off');
+        container.innerHTML = '';
+    }
+}
+
+
+</script>
+
 </body>
 </html>
