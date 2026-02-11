@@ -11,6 +11,8 @@ a {
     display: grid; 
     grid-template-rows: 0fr; 
     min-height: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
   transition: visibility 1s;
   transition: grid-template-rows 1s;}
 

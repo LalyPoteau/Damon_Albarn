@@ -83,7 +83,7 @@ Damon naît en 1968 dans une famille d'artistes avec une enfance remplie de dét
 
 Damon malgré tout ses groupes ne tient pas en place et à plein d'autres projets. Il s’est installé à Mali pour créer le label Honest Jon’s (mettre lien s' ils ont un site) . Il a également créer un opéra chinois et une comédie musicale sur Alice au pays des merveilles
 `;
-let container = document.getElementById('readMoreContainers');
+let container = document.getElementById('readMoreContainer');
 let txtExtended = document.getElementById('txtExtended');
     let btn = document.getElementById('btn');
     btn.addEventListener('click', butn_action)
@@ -95,7 +95,6 @@ let txtExtended = document.getElementById('txtExtended');
         container.classList.toggle("expanded");
     if(!isOpen){
         btn.innerHTML = 'Lire moins  <i class="bx bx-right-arrow-alt"></i>';
-        console.log('on');
         isOpen = true;
         txtExtended.append(readmore);
     }
