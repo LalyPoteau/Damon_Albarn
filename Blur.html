@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style/style_laure.css">
+    <link rel="stylesheet" href="src/style/style_laly.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,14 +37,58 @@
 
     </section>
 
+    
+
+    <div class="albums">
+        <img class="rotating" src="src/images/vinyl.png">
+
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/3VyHgnHE4cp7YuU7skzuJ2?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+
+    <footer>
+    <nav>
+        <a href="Blur.html">
+        <div class="main">
+            <img src="src/images/blur.jpg" alt="Blur">
+            <div class="hover blur">
+                <h3>Blur</h3>
+                <p>C’est le premier groupe fondé par Damon Albarn. Initialement nommé Seymour, lorsque le groupe arriva dans le label FoodRecords en mars 1990 ils ont dû changer le nom pour quelque chose de plus court, c’est ainsi qu’ils choisirent le nom Blur “flou” en anglais. </p>
+                <button>Lire plus <i class="bx bx-right-arrow-alt"></i></button>    
+            </div>
+        </div>
+    
+        </a>
+        <a href="Gorillaz.html">
+            <div class="main">
+                <img src="src/images/gorillaz.png" alt="Gorillaz">
+                <div class="hover gorillaz">
+                    <h3>Gorillaz</h3>
+                    <p>Gorillaz découle de l’idée de critiquer l’industrie à l’aide d’un groupe virtuel tous les membres du groupe sont des personnages fictifs avec de vrais musiciens derrière. Le groupe obtient un succès planétaire.</p>
+                    <button>Lire plus <i class="bx bx-right-arrow-alt"></i></button>
+                </div>
+            </div>
+        </a>
+
+        <a href="ThegoodThebadandThequeen.html">
+        <div class="main">
+            <img src="src/images/merrie land.jpg" alt="The Good the bad and the queen">
+            <div class="hover thequeen">
+                <h3>The Good the bad and the queen</h3>
+                <p>Le groupe était de base un des nombreux projets solo de Damon Albarn, avec la production de Danger Mouse.</p>
+                <button>Lire plus <i class="bx bx-right-arrow-alt"></i></button>
+            </div>
+        </div>
+        </a>
+    
+    </nav>
+    </footer>
 
     <script>
-
-    
-    let readmore = `Le premier gros succès du groupe fut Parklife en 1994, pour lequel ils ont gagné le British album of the year et ils ont ensuite enchaîné les succès tels que Girls and Boys, Beetlebum et bien évidemment Song 2, nominé dans la catégorie British single of the year qui est aujourd’hui la musique la plus écouté du groupe avec 1 milliard d’écoutes sur spotify.`;
-let container = document.getElementById('readMoreContainer');
-    let btn = document.getElementById('btn');
-    btn.addEventListener('click', butn_action)
+        let readmore = `Le premier gros succès du groupe fut Parklife en 1994, pour lequel ils ont gagné le British album of the year et ils ont ensuite enchaîné les succès tels que Girls and Boys, Beetlebum et bien évidemment Song 2, nominé dans la catégorie British single of the year qui est aujourd’hui la musique la plus écouté du groupe avec 1 milliard d’écoutes sur spotify.`;
+        let container = document.getElementById('readMoreContainer');
+        let btn = document.getElementById('btn');
+        btn.addEventListener('click', butn_action)
 
 
 
