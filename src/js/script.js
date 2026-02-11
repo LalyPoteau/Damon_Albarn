@@ -16,7 +16,6 @@ box.append(box_content)
 
 function anecdote(){
     id = Math.floor(Math.random() * funfacts.length); //récupère l'id au hasard
-    console.log(id);
     box_content.innerHTML=funfacts[id]; //adapte celon l'id récupèrer
     
 }
