@@ -26,7 +26,7 @@ Damon Albarn est un auteur compositeur Britannique. 
 
 Damon Albarn, passé de bébé testeurs à un des musicien britannique les plus connu du au nombreux groupe qu’il a fondé à travers le temps, notamment Blur, Gorillaz et  The good, the Bad and the Queen.
 </p>
-<div id="readMoreContainer"></div>
+<div id="readMoreContainer"> <div id="txtExtended"></div></div>
 <button id="btn">Lire plus <i class="bx bx-right-arrow-alt"></i></button>
 </div>
 
@@ -56,9 +56,7 @@ Damon Albarn, passé de bébé testeurs à un des musicien britannique les plus 
             <button>Lire plus <i class="bx bx-right-arrow-alt"></i></button>
         </div>
     </div>
-    
-        
-    </div>
+
     </a>
     <a href="ThegoodThebadandThequeen.html">
         <div class="main">
@@ -86,22 +84,24 @@ Damon naît en 1968 dans une famille d'artistes avec une enfance remplie de dét
 Damon malgré tout ses groupes ne tient pas en place et à plein d'autres projets. Il s’est installé à Mali pour créer le label Honest Jon’s (mettre lien s' ils ont un site) . Il a également créer un opéra chinois et une comédie musicale sur Alice au pays des merveilles
 `;
 let container = document.getElementById('readMoreContainer');
+let txtExtended = document.getElementById('txtExtended');
     let btn = document.getElementById('btn');
     btn.addEventListener('click', butn_action)
     let isOpen = false;
+    
 
     //vérifie si on a ouvert le read more & soit rajoute ou retire le texte en mettant à jour celui du bouton
     function butn_action(){
+        container.classList.toggle("expanded");
     if(!isOpen){
         btn.innerHTML = 'Lire moins  <i class="bx bx-right-arrow-alt"></i>';
-        console.log('on');
         isOpen = true;
-        container.append(readmore);
+        txtExtended.append(readmore);
     }
     else {
         isOpen = false;
         btn.innerHTML = 'Lire plus  <i class="bx bx-right-arrow-alt"></i>';
-        container.innerHTML = ''; 
+        txtExtended.innerHTML = ''; 
     }
 }
 
