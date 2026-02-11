@@ -34,7 +34,6 @@ header h3{
     font-size: 2.5rem;
     margin: 0;
     font-style: normal;
-    color: #ff8300;
     text-align: center;
     margin-top: 13px;
 }
@@ -105,6 +104,18 @@ header img{
 }
 .rotating {
     animation: rotating 2s linear infinite;
-    width: 30%;
-    margin-top : 70px
+    width: 45%;
+    
+}
+
+#thequeen h3{
+    color: #03954C; 
+    font-size: 1.5rem;
+
+}
+
+#thequeen img{
+        border: solid 4px #03954C;
+        border-image: linear-gradient(#3DE08E, #03954C) 1;
+
 }
