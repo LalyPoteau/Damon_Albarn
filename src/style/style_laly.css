@@ -187,4 +187,51 @@ filter: blur(3px);
     font-size: 2.5rem;
     margin-right: 15px;
 }
+
+/* responsive adjustments */
+@media (max-width: 768px) {
+    /* stack main sections */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .presentation {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .presentation img {
+        width: 80%;
+        margin-top: 20px;
+    }
+    .text-groupe {
+        width: 90%;
+    }
+    .albums {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+    /* hide vinyl image on small screens */
+    .rotating {
+        display: none;
+    }
+    /* make spotify player full width if necessary */
+    .player_spotify, .albums iframe {
+        width: 90% !important;
+        height: auto !important;
+    }
+
+    /* footer links stack vertically */
+    footer nav {
+        grid-template-columns: 1fr;
+    }
+
+    /* always show hover effect on touch devices */
+    a .hover,
+    a img {
+        display: block;
+        transform: scaleY(1.1);
+        opacity: 0.8;
+    }
+}
     
