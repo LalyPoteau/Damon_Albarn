@@ -27,7 +27,7 @@
     <section class="presentation container" id="Gorillaz">
         <div id="intro" class="text-groupe">
 <p >
-Gorillaz découle de l’idée de critiquer l’industrie à l’aide d’un groupe virtuel tous les membres du groupe sont des personnages fictifs avec de vrais musiciens derrière. Le groupe obtient un succès planétaire. Le Guinness book le classe comme “le groupe virtuel le plus célèbre” au monde. 
+Gorillaz découle de l’idée de critiquer l’industrie à l’aide d’un groupe virtuel. Tous les membres du groupe sont des personnages fictifs avec de vrais musiciens derrière. Le groupe obtient un succès planétaire.
 </p>
 <div id="readMoreContainer"> <div id="txtExtended"></div></div>
 <button id="btn">Lire plus <i class="bx bx-right-arrow-alt"></i></button>
@@ -61,7 +61,7 @@ Gorillaz découle de l’idée de critiquer l’industrie à l’aide d’un gro
         <img src="src/images/gorillaz.png" alt="Gorillaz">
         <div class="hover gorillaz">
             <h3>Gorillaz</h3>
-            <p>Gorillaz découle de l’idée de critiquer l’industrie à l’aide d’un groupe virtuel tous les membres du groupe sont des personnages fictifs avec de vrais musiciens derrière. Le groupe obtient un succès planétaire.</p>
+            <p>Gorillaz découle de l’idée de critiquer l’industrie à l’aide d’un groupe virtuel. Tous les membres du groupe sont des personnages fictifs avec de vrais musiciens derrière. Le groupe obtient un succès planétaire.</p>
             <button>Lire plus <i class="bx bx-right-arrow-alt"></i></button>
         </div>
     </div>
@@ -72,7 +72,7 @@ Gorillaz découle de l’idée de critiquer l’industrie à l’aide d’un gro
         <img src="src/images/merrie land.jpg" alt="The Good the bad and the queen">
         <div class="hover thequeen">
             <h3>The Good the bad and the queen</h3>
-            <p>Le groupe était de base un des nombreux projets solo de Damon Albarn, avec la production de Danger Mouse.</p>
+            <p>Le groupe était à l'origine un des nombreux projets solo de Damon Albarn, avec la production de Danger Mouse.</p>
             <button>Lire plus <i class="bx bx-right-arrow-alt"></i></button>
         </div>
     </div>
@@ -87,12 +87,9 @@ Gorillaz découle de l’idée de critiquer l’industrie à l’aide d’un gro
     <script>
 
     
-    let readmore = `Les personnages sont dessinés par Jamie Christopher Hewlett et le groupe en lui-même est composé de plusieurs artistes qui changent régulièrement, sauf Damon Albarn qui est présent pour chaque projet.
-
-Gorillaz à sortis sont plus gros hit et 2005, Feel Good Inc. Cette musique sera nominée au Grammys dans les catégories record of the year et best short form music video et gagne le grammy de “best pop collaboration with vocals” en 2006. Le clip fut également sélectionné par MTV Video Music Award en 2005 obtenant breakthrough video et best special effects in a video
-`;
-let container = document.getElementById('readMoreContainer');
-let txtExtended = document.getElementById('txtExtended');
+    let readmore = `Les personnages sont dessinés par Jamie Christopher Hewlett et le groupe en lui-même est composé de plusieurs artistes qui changent régulièrement, sauf Damon Albarn qui est présent pour chaque projet. Gorillaz a sorti son plus gros hit en 2005, Feel Good Inc. Cette musique sera nominée aux Grammys dans les catégories Record Of The Year et Best Short Form Music Video et gagne le grammy de “best pop collaboration with vocals” en 2006. Le clip fut également sélectionné par MTV Video Music Award en 2005, obtenant les récompenses Breakthrough Video et Best Special Effects In A Video.`;
+    let container = document.getElementById('readMoreContainer');
+    let txtExtended = document.getElementById('txtExtended');
     let btn = document.getElementById('btn');
     btn.addEventListener('click', butn_action)
     let isOpen = false;
